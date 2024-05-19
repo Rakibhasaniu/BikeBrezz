@@ -1,5 +1,5 @@
-const adminDashboardPage = () => {
+const AdminDashboardPage = () => {
     return <div>admin Dashboard Page</div>;
   };
   
-  export default adminDashboardPage;
+  export default AdminDashboardPage;
