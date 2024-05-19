@@ -25,7 +25,7 @@ export const UserSidebarWrapper = () => {
           {" "}
           <Link className="flex" href="/">
             <Cog />
-            <p className="font-bold text-inherit px-4">APOLLO GEARS</p>
+            <p className="font-bold text-inherit px-4">BikeBrezze</p>
           </Link>
         </div>
 
@@ -39,10 +39,10 @@ export const UserSidebarWrapper = () => {
             />
             <SidebarMenu title="Main Menu">
               <SidebarItem
-                isActive={pathname === "/dashboard/rent-car"}
-                title="rent-car"
+                isActive={pathname === "/dashboard/rent-bike"}
+                title="rent-bike"
                 icon={<Car />}
-                href="/dashboard/rent-car"
+                href="/dashboard/rent-bike"
               />
               <SidebarItem
                 isActive={pathname === "/dashboard/payments"}

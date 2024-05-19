@@ -1,5 +1,6 @@
 import { Card, CardBody, Image } from "@nextui-org/react";
 import BannerButton from "./BannerButton";
+// import MotionCar from "./MotionBike";
 
 export default function Banner() {
   return (
@@ -20,10 +21,11 @@ export default function Banner() {
           <Image
             alt="Card background"
             className="object-cover rounded-xl"
-            src="../../assets/hero-car.svg"
+            src="../../assets/bk.jpg"
             width={750}
             height={750}
           />
+          {/* <MotionCar /> */}
         </div>
       </CardBody>
     </Card>

@@ -1,4 +1,5 @@
 "use client";
+import { useSidebarContext } from "../../layout/layout-context";
 import { CollapseItems } from "./collapse-items";
 import { SidebarItem } from "./sidebar-item";
 import { SidebarMenu } from "./sidebar-menu";
@@ -11,11 +12,11 @@ import { usePathname } from "next/navigation";
 
 export const AdminSidebarWrapper = () => {
   const pathname = usePathname();
-  // const { collapsed } = useSidebarContext();
+  const { collapsed } = useSidebarContext();
 
   return (
     <aside className="h-screen z-[20] sticky top-0">
-      {/* {collapsed ? <div className={Sidebar.Overlay()} /> : null} */}
+      {collapsed ? <div className={Sidebar.Overlay()} /> : null}
       <div
         className={Sidebar({
           // collapsed: collapsed,

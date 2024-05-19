@@ -1,3 +1,4 @@
+import UserLayout from "./layout/userLayout";
 
 export default function userLayout({
   children,
@@ -6,8 +7,10 @@ export default function userLayout({
 }>) {
   return (
     <div>
-      
-        {children}
+        {/* <UserSidebarWrapper /> */}
+        <UserLayout>
+          {children}
+          </UserLayout>
       
     </div>
   );
